@@ -13,9 +13,9 @@ Specifies the provider for the project. In this case, the provider is AWS. This 
 ### 3. `variables.tf`
 Contains all variable declarations to make the configuration dynamic and reusable. Variables include:
 - AWS region
-- Instance type
+- Instance ZONE
 - Key name
-- AMI ID
+- User
 
 ### 4. `script.sh`
 A shell script executed during instance initialization to install necessary software like Ansible and other dependencies. This script is passed to the EC2 instance via user data.
